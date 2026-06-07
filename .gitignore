@@ -1,0 +1,61 @@
+# ─── Backend ───────────────────────────────────────────────────────────────────
+backend/node_modules/
+backend/.env
+backend/.env.*
+!backend/.env.example
+backend/logs/
+backend/*.log
+
+# ─── Frontend (Flutter) ────────────────────────────────────────────────────────
+frontend/.dart_tool/
+frontend/.flutter-plugins
+frontend/.flutter-plugins-dependencies
+frontend/.pub-cache/
+frontend/.pub/
+frontend/build/
+frontend/pubspec.lock
+
+# Android build artifacts
+frontend/android/app/debug/
+frontend/android/app/profile/
+frontend/android/app/release/
+frontend/android/.gradle/
+frontend/android/local.properties
+frontend/android/key.properties
+
+# iOS build artifacts
+frontend/ios/.symlinks/
+frontend/ios/Flutter/.last_build_id
+frontend/ios/Pods/
+frontend/ios/Runner.xcworkspace/xcuserdata/
+frontend/ios/Flutter/Generated.xcconfig
+frontend/ios/Flutter/flutter_export_environment.sh
+
+# ─── Database ──────────────────────────────────────────────────────────────────
+database/*.dump
+database/dump_*.sql
+
+# ─── IDE & OS ──────────────────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ─── Claude Code & AI agents ───────────────────────────────────────────────────
+.claude/
+AGENTS.md
+CLAUDE.md
+
+# ─── Docs internal (tidak perlu di repo) ───────────────────────────────────────
+plan.md
+improvement.md
+changedb.md
+
+# ─── Test output (generated) ────────────────────────────────────────────────────
+backend/coverage/
+frontend/coverage/
+qa/postman/report.html
